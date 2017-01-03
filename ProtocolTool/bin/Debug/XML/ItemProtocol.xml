@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<NameSpace>
+		<Include name="system"/>
+	</NameSpace>
+	<TypeDefine>
+		<Enum name="EItemType" description="道具大类">
+		  <Member name="eTEquip1" value="1" description="装备"/>
+		  <Member name="eTEquip2" value="2" description="装备碎片"/>
+		</Enum>
+		<Struct name="EItemStruct1" description="道具属性">
+		   <Member type="uint" name="id" description="id"/>
+		   <Member type="List" name="EItemStruct2" description="值"/>
+		</Struct>
+		<Struct name="EItemStruct2" description="道具属性">
+		   <Member type="uint" name="id" description="id"/>
+		   <Member type="uint" name="num" description="值"/>
+		</Struct>
+	</TypeDefine>
+	<FuncC2S>
+		<Func name="SceneUseItem" description="使用道具">
+		  <Param type="uint" name="id" description="作用对象"/>
+		  <Param type="List" name="EItemStruct1" description="使用个数"/>
+		</Func>
+		<Func name="SceneUseItem" description="使用道具">
+		  <Param type="uint" name="id" description="作用对象"/>
+		  <Param type="EItemStruct2" name="item" description="使用个数"/>
+		</Func>
+	</FuncC2S>
+	<FuncS2C>
+		<Func name="SceneSyncWing" description="同步翅膀信息">
+			<Param type="uint" name="itemId" description="翅膀Id"/>
+			<Param type="uint" name="stage" description="翅膀阶数"/>
+			<Param type="uint" name="progress" description="翅膀升级进度"/>
+			<Param type="string" name="level" description="翅膀强化等级"/>
+			<Param type="EItemStruct2" name="item" description="属性"/>
+		</Func>
+		<Func name="SceneSyncWingStageProgress" description="翅膀升阶进度">
+			<Param type="uint" name="itemId" description="翅膀Id"/>
+			<Param type="List" name="EItemStruct1" description="翅膀升级进度"/>
+		</Func>
+	</FuncS2C>
+</Protocol>
