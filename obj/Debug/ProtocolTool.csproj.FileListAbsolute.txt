@@ -4,3 +4,6 @@ E:\GitHub\ProtocolTool\ProtocolTool\bin\Debug\ProtocolTool.pdb
 E:\GitHub\ProtocolTool\ProtocolTool\obj\Debug\ProtocolTool.csprojResolveAssemblyReference.cache
 E:\GitHub\ProtocolTool\ProtocolTool\obj\Debug\ProtocolTool.exe
 E:\GitHub\ProtocolTool\ProtocolTool\obj\Debug\ProtocolTool.pdb
+E:\GitHub\ProtocolTool\bin\Debug\ProtocolTool.exe.config
+E:\GitHub\ProtocolTool\obj\Debug\ProtocolTool.exe
+E:\GitHub\ProtocolTool\obj\Debug\ProtocolTool.pdb
